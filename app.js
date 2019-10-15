@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require ('cors');
 
+mongoose.Promise = require('bluebird');
+
 const app = express();
 
 app.set('port', process.env.PORT || 8081);
